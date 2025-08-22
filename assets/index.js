@@ -70,16 +70,16 @@ form.addEventListener("submit", async (e) => {
   }
 
   // Validação do tipo de projeto
-  const tiposValidos = [
-    "MVP do zero",
-    "App Web",
-    "App Mobile",
-    "Landing Page",
-    "Site institucional",
-    "Integração/API",
-    "Business Intelligence",
-  ];
-  if (!tiposValidos.includes(data.title)) {
+  // const tiposValidos = [
+  //   "MVP do zero",
+  //   "App Web",
+  //   "App Mobile",
+  //   "Landing Page",
+  //   "Site institucional",
+  //   "Integração/API",
+  //   "Business Intelligence",
+  // ];
+  if (!data.title) {
     msg.textContent = "Selecione um tipo de projeto válido.";
     msg.style.color = "#ffb4b4";
     return;
