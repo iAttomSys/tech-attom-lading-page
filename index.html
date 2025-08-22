@@ -31,32 +31,24 @@
       "@context":"https://schema.org",
       "@type":"ProfessionalService",
       "name":"Tech Attom",
-      "url":"https://example.com",
+      "url":"https://techattom.com",
       "description":"Software house focada em MVPs rápidos, apps web/mobile e integrações.",
       "areaServed":"Brasil",
       "sameAs":["https://linkedin.com"],
       "aggregateRating": {
         "@type": "AggregateRating", "ratingValue":"4.9", "reviewCount":"128"
-      }
-
-      ,
+      },
       "makesOffer":[ {
         "@type": "Offer", "name":"MVP em 30 dias"
-      }
-
-      ,
+      },
       {
       "@type": "Offer", "name":"App Web + Mobile"
-    }
-
-    ,
+    },
     {
     "@type": "Offer", "name":"Integrações e APIs"
     }
-
     ]
     }
-
     </script>
 </head>
 
@@ -91,12 +83,10 @@
     </div>
   </section>
   <section class="section sm">
-    <div class="container trust"><span class="muted">Confiado por equipes em</span><img
-        src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Telef%C3%B4nica_2021.svg" alt="Telefônica"
-        loading="lazy" /><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Banco_do_Brasil_logo.svg"
-        alt="Banco do Brasil" loading="lazy" /><img
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Natura_Logo.svg" alt="Natura" loading="lazy" /><img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Petrobras_logo.svg" alt="Petrobras" loading="lazy" />
+    <div class="container trust"><span class="muted">Confiado por equipes em</span><img src="./assets/img/care.svg"
+        alt="Care" loading="lazy" /><img src="./assets/img/puah_logo.png" alt="Puah Consultoria" loading="lazy" /><img
+        src="/assets/img/logo.yuni.png" alt="Yuni Digital" loading="lazy" /><img src="./assets/img/logonirron.png"
+        alt="Nirron" loading="lazy" /><img src="./assets/img/logo-rba.webp" alt="RBA" loading="lazy" />
     </div>
   </section>
   <section class="section">
@@ -112,8 +102,8 @@
         <article class="card">
           <h3>App Web+Mobile</h3>
           <p>Frontend React/Next,
-            backend Node/Python,
-            banco PostgreSQL. Performance e SEO.</p>
+            backend Node/Spring Boot,
+            banco PostgreSQL. Performance e muito mais.</p>
         </article>
         <article class="card">
           <h3>Integrações e APIs</h3>
@@ -135,15 +125,17 @@
       <h2 id="tit-portfolio" class="title">Portfólio recente</h2>
       <p class="subtitle">Resultados que falam por si.</p>
       <div class="grid portfolio">
-        <figure class="shot"><img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
-            alt="Dashboard de analytics" loading="lazy"><b>BI & Analytics</b></figure>
-        <figure class="shot"><img
-            src="https://images.unsplash.com/photo-1551281044-8eea95f15cdb?q=80&w=1200&auto=format&fit=crop"
-            alt="Aplicativo mobile" loading="lazy"><b>App logística</b></figure>
-        <figure class="shot"><img
-            src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop"
-            alt="Integração de pagamentos" loading="lazy"><b>Pagamentos</b></figure>
+        <figure class="shot"><img src="./assets//img/nirron.png" height="500" alt="Portfólio Web"
+            loading="lazy"><b>Web</b></figure>
+        <figure class="shot"><img src="./assets/img/pllug.png" height="500" alt="Aplicativo mobile"
+            loading="lazy"><b>App</b>
+        </figure>
+        <!-- <figure class="shot"><img src="/assets/img/unimed.jpeg" height="500" alt="Area de Saúde"
+            loading="lazy"><b>Integração</b> -->
+        <figure class="shot"><img src="/assets/img/unimed.jpeg" height="500" alt="Area de Saúde"
+            loading="lazy"><b>Integração</b>
+        </figure>
+
       </div>
     </div>
   </section>
@@ -177,13 +169,13 @@
     <div class="container">
       <h2 id="tit-depoimentos" class="title">Clientes que confiaram</h2>
       <div class="grid testis">
-        <div class="card testi">“A melhor decisão do nosso MVP.” <b>— Carla,
-            Fintech</b></div>
-        <div class="card testi">“Integração impecável com nosso ERP.” <b>— Rodrigo,
-            Varejo</b></div>
+        <div class="card testi">“Sempre chamo eles para desenvolver o aplicativo mobile.” <b>— Juliano,
+            Care</b></div>
+        <div class="card testi">“Equipe super atenciosa, sempre pronta para ajudar.” <b>— Alvarenga,
+            RBA</b></div>
         <div class="card testi">“Time sênior de verdade,
           prazos cumpridos.” <b>— Juliana,
-            Saúde</b></div>
+            Gestão</b></div>
       </div>
     </div>
   </section>
@@ -208,6 +200,8 @@
                 <option>MVP do zero</option>
                 <option>App Web</option>
                 <option>App Mobile</option>
+                <option>Landing Page</option>
+                <option>Site institucional</option>
                 <option>Integração/API</option>
                 <option>Business Intelligence</option>
               </select></div>
@@ -244,6 +238,31 @@
           </ul>
         </div>
       </details>
+      <details class="card" style="padding:16px; border:1px solid #ddd; border-radius:8px;">
+        <summary style="cursor:pointer; font-weight:bold; font-size:16px;">
+          Processo de desenvolvimento se basea em alguns processos:
+        </summary>
+        <div style="margin-top:12px; color:#555; line-height:1.6;">
+          <p class="muted">Nosso processo de desenvolvimento:</p>
+          <ul style="padding-left:20px; margin-top:8px;">
+            <li><strong>Reunião de Alinhamento:</strong> Realizamos uma reunião para conhecer seu negócio e entender
+              suas
+              expectativas.</li>
+            <li><strong>Construção do Design:</strong> Com base no wireframe, desenvolvemos um design estratégico
+              completo e
+              personalizado.</li>
+            <li><strong>Aprovação Final:</strong> Você revisa o design final e solicita ajustes, garantindo que tudo
+              esteja
+              conforme sua visão antes da implantação.</li>
+            <li><strong>Otimização:</strong> Executamos todas as melhorias necessárias para que sua página seja rápida,
+              eficiente e responsiva.</li>
+            <li><strong>Implantação:</strong> Seu site é colocado no ar, totalmente pronto para que você comece a vender
+              e
+              atrair clientes.</li>
+          </ul>
+        </div>
+
+      </details>
 
       <details class="card" style="padding:16px">
         <summary><strong>Formas de pagamento?</strong></summary>
@@ -253,6 +272,25 @@
         <summary><strong>Vocês assumem código existente?</strong></summary>
         <p class="muted">Sim. Fazemos auditoria técnica e plano de estabilização.</p>
       </details>
+      <details class="card" style="padding:16px">
+        <summary><strong>Quantas revisões posso solicitar no projeto?</strong></summary>
+        <p class="muted">
+          Você pode solicitar todas as revisões necessárias para que o projeto esteja totalmente alinhado ao briefing
+          inicial.
+        </p>
+      </details>
+
+      <details class="card" style="padding:16px">
+        <summary><strong>Qual é o tempo estimado para entregar o site?</strong></summary>
+        <p class="muted">
+          O prazo varia conforme o escopo de cada projeto. Para Landing Pages, estimamos de 2 a 7 dias úteis, enquanto
+          sites
+          corporativos geralmente levam de 4 a 8 dias úteis. A colaboração do cliente e fatores adicionais podem
+          influenciar a
+          entrega final.
+        </p>
+      </details>
+
     </div>
   </section>
   <footer id="contato" class="container">
