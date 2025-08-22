@@ -74,6 +74,8 @@ form.addEventListener("submit", async (e) => {
     "MVP do zero",
     "App Web",
     "App Mobile",
+    "Landing Page",
+    "Site institucional",
     "Integração/API",
     "Business Intelligence",
   ];
@@ -114,7 +116,6 @@ form.addEventListener("submit", async (e) => {
     msg.style.color = "#ffb4b4";
   }
 });
-
 
 // Acessibilidade: focar CTA ao pressionar Alt+K
 window.addEventListener("keydown", (e) => {
