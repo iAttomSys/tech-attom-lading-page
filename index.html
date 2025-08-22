@@ -14,81 +14,100 @@
     content="MVPs rápidos, apps web/mobile e integrações. Propostas em 24h. Vagas limitadas por mês." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/og.jpg" />
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/index.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
+
+  <!-- Font Awesome 6.5.0 com SRI correto -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- Garante que resets não escondam o ícone -->
+  <style>
+    .btn i {
+      display: inline-block;
+      margin-right: .5rem;
+      line-height: 1;
+    }
+  </style>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
-      emailjs.init({
-        publicKey: "PreLiRK6ZZcXqd67q",
-      });
+      emailjs.init({ publicKey: "PreLiRK6ZZcXqd67q" });
     })();
   </script>
-  <script type=" application/ld+json">
-    {
 
-      "@context":"https://schema.org",
-      "@type":"ProfessionalService",
-      "name":"Tech Attom",
-      "url":"https://techattom.com",
-      "description":"Software house focada em MVPs rápidos, apps web/mobile e integrações.",
-      "areaServed":"Brasil",
-      "sameAs":["https://linkedin.com"],
-      "aggregateRating": {
-        "@type": "AggregateRating", "ratingValue":"4.9", "reviewCount":"128"
-      },
-      "makesOffer":[ {
-        "@type": "Offer", "name":"MVP em 30 dias"
-      },
-      {
-      "@type": "Offer", "name":"App Web + Mobile"
-    },
-    {
-    "@type": "Offer", "name":"Integrações e APIs"
-    }
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Tech Attom",
+    "url":"https://techattom.com",
+    "description":"Software house focada em MVPs rápidos, apps web/mobile e integrações.",
+    "areaServed":"Brasil",
+    "sameAs":["https://linkedin.com"],
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"128"},
+    "makesOffer":[
+      {"@type":"Offer","name":"MVP em 30 dias"},
+      {"@type":"Offer","name":"App Web + Mobile"},
+      {"@type":"Offer","name":"Integrações e APIs"}
     ]
-    }
-    </script>
+  }
+  </script>
 </head>
 
 <body>
   <header>
     <nav class="container nav">
       <div class="logo"><span class="logo-dot"></span>Tech Attom</div>
-      <div style="display:flex;gap:12px;align-items:center"><a href="#portfolio" class="badge">Portfólio</a><a
-          href="#orcamento" class="btn">Solicitar proposta</a></div>
+      <div style="display:flex;gap:12px;align-items:center; font-size: 11px;">
+        <a href="#portfolio" class="badge">Portfólio</a>
+        <a href="#orcamento" class="btn">Solicitar proposta</a>
+      </div>
     </nav>
   </header>
+
   <section class="hero" aria-labelledby="titulo-hero">
     <div class="container">
-      <div><span class="badge">Vagas limitadas este mês</span>
+      <div>
+        <span class="badge">Vagas limitadas este mês</span>
         <h1 id="titulo-hero" class="title">Software sob medida que <span>gera resultado</span></h1>
-        <p class="subtitle">MVPs rápidos,
-          apps web/mobile e integrações. Proposta técnica em 24h. Garantia de 7 dias. </p>
-        <div class="hero-cta"><a href="#orcamento" class="btn" id="ctaTop">Quero meu orçamento</a><a href="#contato"
-            class="btn ghost">Falar no WhatsApp</a></div>
+        <p class="subtitle">MVPs rápidos, apps web/mobile e integrações. Proposta técnica em 24h. Garantia de 7 dias.
+        </p>
+        <div class="hero-cta">
+          <a href="#orcamento" class="btn" id="ctaTop">Quero meu orçamento</a>
+          <a href="#contato" class="btn ghost">
+            <i class="bi bi-whatsapp"></i>
+            Falar no Whats
+          </a>
+        </div>
         <ul class="hero-list">
           <li>✅ Briefing guiado em 20 min</li>
           <li>✅ Prazo e valor definidos antes do início</li>
-          <li>✅ Time sênior em produto,
-            UI e dev</li>
+          <li>✅ Time sênior em produto, UI e dev</li>
         </ul>
       </div>
       <div class="hero-media">
-        <div class="mock"><img
-            src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
-            alt="Tela de aplicativo moderno" loading="lazy" /></div>
+        <div class="mock">
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
+            alt="Tela de aplicativo moderno" loading="lazy" />
+        </div>
       </div>
     </div>
   </section>
+
   <section class="section sm">
-    <div class="container trust"><span class="muted">Confiado por equipes em</span><img src="./assets/img/care.svg"
-        alt="Care" loading="lazy" /><img src="./assets/img/puah_logo.png" alt="Puah Consultoria" loading="lazy" /><img
-        src="/assets/img/logo.yuni.png" alt="Yuni Digital" loading="lazy" /><img src="./assets/img/logonirron.png"
-        alt="Nirron" loading="lazy" /><img src="./assets/img/logo-rba.webp" alt="RBA" loading="lazy" />
+    <div class="container trust">
+      <span class="muted">Confiado por equipes em</span>
+      <img src="./assets/img/care.svg" alt="Care" loading="lazy" />
+      <img src="./assets/img/puah_logo.png" alt="Puah Consultoria" loading="lazy" />
+      <img src="/assets/img/logo.yuni.png" alt="Yuni Digital" loading="lazy" />
+      <img src="./assets/img/logonirron.png" alt="Nirron" loading="lazy" />
+      <img src="./assets/img/logo-rba.webp" alt="RBA" loading="lazy" />
     </div>
   </section>
+
   <section class="section">
     <div class="container">
       <h2 class="title">O que entregamos</h2>
@@ -96,30 +115,20 @@
       <div class="grid offers">
         <article class="card">
           <h3>MVP em 30 dias</h3>
-          <p>Valide seu produto com um escopo enxuto,
-            UX clara e métricas desde o dia 1.</p>
+          <p>Valide seu produto com um escopo enxuto, UX clara e métricas desde o dia 1.</p>
         </article>
         <article class="card">
           <h3>App Web+Mobile</h3>
-          <p>Frontend React/Next,
-            backend Node/Spring Boot,
-            banco PostgreSQL. Performance e muito mais.</p>
+          <p>Frontend React/Next, backend Node/Spring Boot, banco PostgreSQL. Performance e muito mais.</p>
         </article>
         <article class="card">
           <h3>Integrações e APIs</h3>
-          <p>ERP,
-            gateways de pagamento,
-            automações e ETL de dados. Documentação OpenAPI.</p>
+          <p>ERP, gateways de pagamento, automações e ETL de dados. Documentação OpenAPI.</p>
         </article>
       </div>
     </div>
   </section>
-  <section class="strip section sm">
-    <div class="container">
-      <div><strong>Agenda desta semana:</strong>3 slots para briefing gratuito (20 min) </div><a href="#orcamento"
-        class="btn">Reservar meu slot</a>
-    </div>
-  </section>
+
   <section id="portfolio" class="section" aria-labelledby="tit-portfolio">
     <div class="container">
       <h2 id="tit-portfolio" class="title">Portfólio recente</h2>
@@ -128,35 +137,28 @@
         <figure class="shot"><img src="./assets//img/nirron.png" height="500" alt="Portfólio Web"
             loading="lazy"><b>Web</b></figure>
         <figure class="shot"><img src="./assets/img/pllug.png" height="500" alt="Aplicativo mobile"
-            loading="lazy"><b>App</b>
-        </figure>
-        <!-- <figure class="shot"><img src="/assets/img/unimed.jpeg" height="500" alt="Area de Saúde"
-            loading="lazy"><b>Integração</b> -->
+            loading="lazy"><b>App</b></figure>
         <figure class="shot"><img src="/assets/img/unimed.jpeg" height="500" alt="Area de Saúde"
-            loading="lazy"><b>Integração</b>
-        </figure>
-
+            loading="lazy"><b>Integração</b></figure>
       </div>
     </div>
   </section>
+
   <section class="section" aria-labelledby="tit-processo">
     <div class="container">
       <h2 id="tit-processo" class="title">Processo simples e previsível</h2>
       <div class="grid steps">
         <div class="card step">
           <div class="n">1. Descoberta</div>
-          <p class="muted">Alinhamos objetivos,
-            KPIs e restrições. Briefing guiado.</p>
+          <p class="muted">Alinhamos objetivos, KPIs e restrições. Briefing guiado.</p>
         </div>
         <div class="card step">
           <div class="n">2. Proposta</div>
-          <p class="muted">Escopo fechado,
-            prazo e valor fixos. Sem surpresas.</p>
+          <p class="muted">Escopo fechado, prazo e valor fixos. Sem surpresas.</p>
         </div>
         <div class="card step">
           <div class="n">3. Entrega</div>
-          <p class="muted">Sprints semanais,
-            demo contínua e QA automatizado.</p>
+          <p class="muted">Sprints semanais, demo contínua e QA automatizado.</p>
         </div>
         <div class="card step">
           <div class="n">4. Suporte</div>
@@ -165,37 +167,42 @@
       </div>
     </div>
   </section>
+
   <section class="section" aria-labelledby="tit-depoimentos">
     <div class="container">
       <h2 id="tit-depoimentos" class="title">Clientes que confiaram</h2>
       <div class="grid testis">
-        <div class="card testi">“Sempre chamo eles para desenvolver o aplicativo mobile.” <b>— Juliano,
-            Care</b></div>
-        <div class="card testi">“Equipe super atenciosa, sempre pronta para ajudar.” <b>— Alvarenga,
-            RBA</b></div>
-        <div class="card testi">“Time sênior de verdade,
-          prazos cumpridos.” <b>— Juliana,
-            Gestão</b></div>
+        <div class="card testi">“Sempre chamo eles para desenvolver o aplicativo mobile.” <b>— Juliano, Care</b></div>
+        <div class="card testi">“Equipe super atenciosa, sempre pronta para ajudar.” <b>— Alvarenga, RBA</b></div>
+        <div class="card testi">“Time sênior de verdade, prazos cumpridos.” <b>— Juliana, Gestão</b></div>
       </div>
     </div>
   </section>
+
   <section id="orcamento" class="section" aria-labelledby="tit-orcamento">
     <div class="container">
       <h2 id="tit-orcamento" class="title">Solicite uma proposta em 24h</h2>
-      <p class="subtitle">Preencha e retornamos com escopo,
-        prazo e orçamento estimado.</p>
+      <p class="subtitle">Preencha e retornamos com escopo, prazo e orçamento estimado.</p>
       <div class="card" style="padding:22px">
         <form class="quote" id="quoteForm" novalidate>
           <div class="twocol">
-            <div><label for="nome" class="muted">Seu nome</label><input id="nome" name="name" autocomplete="name"
-                required placeholder="Ex.: Ana Souza" /></div>
-            <div><label for="email" class="muted">Email</label><input id="email" name="email" type="email"
-                autocomplete="email" required placeholder="voce@email.com" /></div>
+            <div>
+              <label for="nome" class="muted">Seu nome</label>
+              <input id="nome" name="name" autocomplete="name" required placeholder="Ex.: Ana Souza" />
+            </div>
+            <div>
+              <label for="email" class="muted">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@email.com" />
+            </div>
           </div>
           <div class="twocol">
-            <div><label for="whats" class="muted">WhatsApp</label><input id="whats" name="whats" inputmode="tel"
-                placeholder="(12) 99658-7740" /></div>
-            <div><label for="tipo" class="muted">Tipo de projeto</label><select id="tipo" name="title" required>
+            <div>
+              <label for="whats" class="muted">WhatsApp</label>
+              <input id="whats" name="whats" inputmode="tel" placeholder="(12) 99658-7740" />
+            </div>
+            <div>
+              <label for="tipo" class="muted">Tipo de projeto</label>
+              <select id="tipo" name="title" required>
                 <option value="">Selecione…</option>
                 <option>MVP do zero</option>
                 <option>App Web</option>
@@ -204,27 +211,30 @@
                 <option>Site institucional</option>
                 <option>Integração/API</option>
                 <option>Business Intelligence</option>
-              </select></div>
+              </select>
+            </div>
           </div>
-          <div><label for="desc" class="muted">Descreva rapidamente sua ideia</label><textarea id="desc" name="message"
-              rows="4" required placeholder="Objetivo, público, prazo e integrações necessárias…"></textarea></div>
+          <div>
+            <label for="desc" class="muted">Descreva rapidamente sua ideia</label>
+            <textarea id="desc" name="message" rows="4" required
+              placeholder="Objetivo, público, prazo e integrações necessárias…"></textarea>
+          </div>
           <button class="btn" type="submit">Receber proposta</button>
           <div id="formMsg" class="muted" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
   </section>
+
   <section class="section" aria-labelledby="tit-faq">
     <div class="container">
       <h2 id="tit-faq" class="title">Perguntas frequentes</h2>
-      <details class="card" style="padding:16px">
+      <details class="card" style="padding:16px; margin:10px 0">
         <summary><strong>Quanto tempo para um MVP?</strong></summary>
-        <p class="muted">Projetos enxutos saem em~30 dias. Escopos maiores variam conforme
-          integrações.</p>
+        <p class="muted">Projetos enxutos saem em~30 dias. Escopos maiores variam conforme integrações.</p>
       </details>
-      <details class="card" style="padding:16px; border:1px solid #ddd; border-radius:8px;">
-        <summary style="cursor:pointer; font-weight:bold; font-size:16px;">
-          Como é o primeiro contato com o cliente?
+      <details class="card" style="padding:16px; margin:10px 0">
+        <summary style="cursor:pointer; font-weight:bold; font-size:16px;">Como é o primeiro contato com o cliente?
         </summary>
         <div style="margin-top:12px; color:#555; line-height:1.6;">
           <p class="muted">Alguns pontos típicos que podem aparecer em um briefing:</p>
@@ -238,72 +248,64 @@
           </ul>
         </div>
       </details>
-      <details class="card" style="padding:16px; border:1px solid #ddd; border-radius:8px;">
-        <summary style="cursor:pointer; font-weight:bold; font-size:16px;">
-          Processo de desenvolvimento se basea em alguns processos:
-        </summary>
+      <details class="card" style="padding:16px; margin:10px 0">
+        <summary style="cursor:pointer; font-weight:bold; font-size:16px;">Processo de desenvolvimento se basea em
+          alguns processos:</summary>
         <div style="margin-top:12px; color:#555; line-height:1.6;">
           <p class="muted">Nosso processo de desenvolvimento:</p>
           <ul style="padding-left:20px; margin-top:8px;">
             <li><strong>Reunião de Alinhamento:</strong> Realizamos uma reunião para conhecer seu negócio e entender
-              suas
-              expectativas.</li>
+              suas expectativas.</li>
             <li><strong>Construção do Design:</strong> Com base no wireframe, desenvolvemos um design estratégico
-              completo e
-              personalizado.</li>
+              completo e personalizado.</li>
             <li><strong>Aprovação Final:</strong> Você revisa o design final e solicita ajustes, garantindo que tudo
-              esteja
-              conforme sua visão antes da implantação.</li>
+              esteja conforme sua visão antes da implantação.</li>
             <li><strong>Otimização:</strong> Executamos todas as melhorias necessárias para que sua página seja rápida,
               eficiente e responsiva.</li>
             <li><strong>Implantação:</strong> Seu site é colocado no ar, totalmente pronto para que você comece a vender
-              e
-              atrair clientes.</li>
+              e atrair clientes.</li>
           </ul>
         </div>
-
       </details>
-
-      <details class="card" style="padding:16px">
+      <details class="card" style="padding:16px; margin:10px 0">
         <summary><strong>Formas de pagamento?</strong></summary>
         <p class="muted">Parcelamos por marcos de entrega. PJ com NF.</p>
       </details>
-      <details class="card" style="padding:16px">
+      <details class="card" style="padding:16px; margin:10px 0">
         <summary><strong>Vocês assumem código existente?</strong></summary>
         <p class="muted">Sim. Fazemos auditoria técnica e plano de estabilização.</p>
       </details>
-      <details class="card" style="padding:16px">
+      <details class="card" style="padding:16px; margin:10px 0">
         <summary><strong>Quantas revisões posso solicitar no projeto?</strong></summary>
-        <p class="muted">
-          Você pode solicitar todas as revisões necessárias para que o projeto esteja totalmente alinhado ao briefing
-          inicial.
-        </p>
+        <p class="muted">Você pode solicitar todas as revisões necessárias para que o projeto esteja totalmente alinhado
+          ao briefing inicial.</p>
       </details>
-
-      <details class="card" style="padding:16px">
+      <details class="card" style="padding:16px; margin:10px 0">
         <summary><strong>Qual é o tempo estimado para entregar o site?</strong></summary>
-        <p class="muted">
-          O prazo varia conforme o escopo de cada projeto. Para Landing Pages, estimamos de 2 a 7 dias úteis, enquanto
-          sites
-          corporativos geralmente levam de 4 a 8 dias úteis. A colaboração do cliente e fatores adicionais podem
-          influenciar a
-          entrega final.
-        </p>
+        <p class="muted">O prazo varia conforme o escopo de cada projeto. Para Landing Pages, estimamos de 2 a 7 dias
+          úteis, enquanto sites corporativos geralmente levam de 4 a 8 dias úteis. A colaboração do cliente e fatores
+          adicionais podem influenciar a entrega final.</p>
       </details>
-
     </div>
   </section>
-  <footer id="contato" class="container">
+
+  <footer id="contato" class="container" style="margin-bottom: 100px;">
     <div style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
       <div class="muted">© <span id="ano"></span>Tech Attom — São José dos Campos</div>
-      <div style="display:flex;gap:12px;align-items:center"><a href="https://wa.me/5512996857740" class="badge"
-          target="_blank" rel="noopener">WhatsApp</a><a href="mailto:imarcelomgl@gmail.com" class="badge">E-mail</a><a
-          href="#orcamento" class="btn">Iniciar projeto</a></div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a href="https://wa.me/5512996857740" class="badge" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:imarcelomgl@gmail.com" class="badge">E-mail</a>
+        <a href="#orcamento" class="btn">Iniciar projeto</a>
+      </div>
     </div>
   </footer>
+
   <a href="https://wa.me/5512996857740" class="btn" style="position:fixed;right:18px;bottom:18px;z-index:60"
-    aria-label="Falar no WhatsApp">Falar
-    no Whats</a>
+    aria-label="Falar no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    Falar no Whats
+  </a>
+
   <script src="./assets/index.js"></script>
 </body>
 

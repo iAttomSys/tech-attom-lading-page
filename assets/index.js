@@ -115,20 +115,6 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-setTimeout(
-  () => {
-    const el = document.createElement("div");
-    el.className = "card";
-    el.style.cssText =
-      "position:fixed;left:16px;bottom:16px;padding:14px 16px;max-width:320px;z-index:70";
-    el.innerHTML =
-      '<strong>Agenda lotando:</strong> restam <u>3 slots</u> para briefing gratuito esta semana. <a class="btn" style="margin-top:8px;display:inline-flex" href="#orcamento">Garantir meu slot</a>';
-    document.body.appendChild(el);
-    setTimeout(() => el.remove(), 15000);
-  },
-
-  20000
-);
 
 // Acessibilidade: focar CTA ao pressionar Alt+K
 window.addEventListener("keydown", (e) => {
