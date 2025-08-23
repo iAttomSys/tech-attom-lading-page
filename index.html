@@ -2,27 +2,69 @@
 <html lang="pt-br">
 
 <head>
+  <!-- Meta Tags Básicas -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tech Attom — Software sob medida que entrega resultado</title>
-  <meta name="description"
-    content="Somos uma software house focada em MVPs rápidos, apps web/mobile e integrações. Propostas em 24h. Vagas limitadas por mês." />
-  <meta property="og:title" content="Tech Attom — Software sob medida que entrega resultado" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tech Attom" />
   <meta name="theme-color" content="#0b1220" />
-  <meta property="og:title" content="Tech Attom — Software sob medida que entrega resultado" />
-  <meta property="og:description"
-    content="MVPs rápidos, apps web/mobile e integrações. Propostas em 24h. Vagas limitadas por mês." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og.jpg" />
 
+  <!-- Título otimizado para SEO -->
+  <title>Tech Attom — Especialistas em Desenvolvimento de Software, Apps Mobile e Sites Sob Medida</title>
+
+  <!-- Meta Description persuasiva -->
+  <meta name="description"
+    content="Transforme sua ideia em realidade com a Tech Attom. Especialistas em desenvolvimento de software, aplicativos mobile e sites sob medida. MVPs em 30 dias, propostas em 24h. Time sênior com mais de 50 projetos entregues. Solicite seu orçamento gratuito hoje!" />
+
+  <!-- Keywords estratégicas -->
+  <meta name="keywords"
+    content="desenvolvimento de software, aplicativos mobile, sites sob medida, MVP, software house, desenvolvimento web, apps, programação, tecnologia, São José dos Campos, Brasil" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://techattom.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://techattom.com" />
+  <meta property="og:title"
+    content="Tech Attom — Especialistas em Desenvolvimento de Software, Apps Mobile e Sites Sob Medida" />
+  <meta property="og:description"
+    content="Transforme sua ideia em realidade com a Tech Attom. Especialistas em desenvolvimento de software, aplicativos mobile e sites sob medida. MVPs em 30 dias, propostas em 24h." />
+  <meta property="og:image" content="https://techattom.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Tech Attom - Desenvolvimento de Software Profissional" />
+  <meta property="og:site_name" content="Tech Attom" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://techattom.com" />
+  <meta name="twitter:title"
+    content="Tech Attom — Especialistas em Desenvolvimento de Software, Apps Mobile e Sites Sob Medida" />
+  <meta name="twitter:description"
+    content="Transforme sua ideia em realidade com a Tech Attom. Especialistas em desenvolvimento de software, aplicativos mobile e sites sob medida. MVPs em 30 dias, propostas em 24h." />
+  <meta name="twitter:image" content="https://techattom.com/twitter-image.jpg" />
+  <meta name="twitter:image:alt" content="Tech Attom - Desenvolvimento de Software Profissional" />
+
+  <!-- Preconnect para performance -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/index.css">
 
-  <!-- Font Awesome 6.5.0 com SRI correto -->
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
-  <!-- Garante que resets não escondam o ícone -->
+  <!-- Estilos inline para ícones -->
   <style>
     .btn i {
       display: inline-block;
@@ -31,6 +73,7 @@
     }
   </style>
 
+  <!-- EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
@@ -38,21 +81,82 @@
     })();
   </script>
 
+  <!-- Schema.org - Organization -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"ProfessionalService",
-    "name":"Tech Attom",
-    "url":"https://techattom.com",
-    "description":"Software house focada em MVPs rápidos, apps web/mobile e integrações.",
-    "areaServed":"Brasil",
-    "sameAs":["https://linkedin.com"],
-    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"128"},
-    "makesOffer":[
-      {"@type":"Offer","name":"MVP em 30 dias"},
-      {"@type":"Offer","name":"App Web + Mobile"},
-      {"@type":"Offer","name":"Integrações e APIs"}
-    ]
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tech Attom",
+    "url": "https://techattom.com",
+    "logo": "https://techattom.com/logo.png",
+    "description": "Especialistas em desenvolvimento de software, aplicativos mobile e sites sob medida. Transformamos ideias em soluções digitais profissionais com MVPs rápidos e qualidade garantida.",
+    "foundingDate": "2020",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São José dos Campos",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-12-99685-7740",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese"
+    },
+    "sameAs": [
+      "https://linkedin.com/company/tech-attom",
+      "https://instagram.com/techattom"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "128",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços de Desenvolvimento",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "MVP em 30 dias",
+            "description": "Valide seu produto com um escopo enxuto, UX clara e métricas desde o dia 1"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "App Web + Mobile",
+            "description": "Frontend React/Next, backend Node/Spring Boot, banco PostgreSQL"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Integrações e APIs",
+            "description": "ERP, gateways de pagamento, automações e ETL de dados"
+          }
+        }
+      ]
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    },
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.1861,
+        "longitude": -45.8869
+      },
+      "geoRadius": "500000"
+    }
   }
   </script>
 </head>
@@ -102,7 +206,7 @@
       <span class="muted">Confiado por equipes em</span>
       <img src="./assets/img/care.svg" alt="Care" loading="lazy" />
       <img src="./assets/img/puah_logo.png" alt="Puah Consultoria" loading="lazy" />
-      <img src="/assets/img/logo.yuni.png" alt="Yuni Digital" loading="lazy" />
+      <img src="./assets/img/logo.yuni.png" alt="Yuni Digital" loading="lazy" />
       <img src="./assets/img/logonirron.png" alt="Nirron" loading="lazy" />
       <img src="./assets/img/logo-rba.webp" alt="RBA" loading="lazy" />
     </div>
@@ -138,7 +242,7 @@
             loading="lazy"><b>Web</b></figure>
         <figure class="shot"><img src="./assets/img/pllug.png" height="500" alt="Aplicativo mobile"
             loading="lazy"><b>App</b></figure>
-        <figure class="shot"><img src="/assets/img/unimed.jpeg" height="500" alt="Area de Saúde"
+        <figure class="shot"><img src="./assets/img/unimed.jpeg" height="500" alt="Area de Saúde"
             loading="lazy"><b>Integração</b></figure>
       </div>
     </div>
